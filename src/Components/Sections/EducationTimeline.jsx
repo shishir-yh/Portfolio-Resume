@@ -8,7 +8,10 @@ const fadeInFromSide = {
 
 const EducationTimeline = () => {
     return (
-        <section className="py-16 bg-base-100">
+
+        //"py-16 bg-white text-gray-800
+        //py-16  bg-base-100  
+        <section className="py-16 bg-white text-gray-800">
             <div className="container mx-auto px-4">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
@@ -88,7 +91,6 @@ const EducationTimeline = () => {
 export default EducationTimeline;
 
 
-// import React from "react";
 
 // const EducationTimeline = () => {
 //     return (

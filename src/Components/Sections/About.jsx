@@ -10,7 +10,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="py-16 bg-base-100"
+            className="py-16  bg-gray-100 text-gray-800 "
         >
             <div className="container mx-auto px-4">
                 <motion.h2

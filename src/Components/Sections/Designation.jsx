@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 const Designation = () => {
     return (
-        <section className="lg:min-h-screen  bg-base-200 pt-16 pb-14  flex flex-col items-center text-center">
+        // bg-white text-gray-800
+        <section className=" bg-white text-gray-800 lg:min-h-screen  pt-16 pb-14  flex flex-col items-center text-center">
             {/* Profile Picture */}
 
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary shadow-lg">

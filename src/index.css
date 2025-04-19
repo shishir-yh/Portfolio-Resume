@@ -1,5 +1,23 @@
+/* index.css */
+
 @import "tailwindcss";
-@plugin "daisyui";
+
+
+/* :root {
+  --text-color: #1a202c;
+
+  --bg-color: #ffffff;
+
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+} */
+
+@plugin "daisyui" {
+  /* themes: false; */
+}
 
 /* common styles for the entire application */
 

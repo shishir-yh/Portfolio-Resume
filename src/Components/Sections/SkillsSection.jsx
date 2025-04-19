@@ -35,19 +35,19 @@ const SkillsSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="py-16 bg-base-200"
+            className="py-16 bg-gray-100"
         >
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4  bg-white text-gray-800 ">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12"
+                    className="bg-white text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12"
                 >
                     Skills
                 </motion.h2>
 
-                <div className="flex flex-col md:flex-row justify-center gap-8">
+                <div className="flex flex-col md:flex-row justify-center gap-8 bg-white  ">
                     {Object.entries(skills).map(([category, items]) => (
                         <motion.div
                             key={category}
@@ -55,16 +55,16 @@ const SkillsSection = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             viewport={{ once: true }}
-                            className="bg-base-100 p-6 rounded-lg shadow-md"
+                            className="bg-white p-6 rounded-lg shadow-md"
                         >
-                            <h3 className="text-2xl font-semibold text-primary mb-4">{category}</h3>
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <h3 className="text-2xl font-semibold text-primary mb-4 ">{category}</h3>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 ">
                                 {items.map((skill, index) => (
                                     <motion.div
                                         key={index}
                                         whileHover={{ scale: 1.1, rotate: 5 }}
                                         transition={{ type: "spring", stiffness: 200 }}
-                                        className="flex flex-col items-center justify-center p-4 bg-base-200 rounded-lg"
+                                        className="flex flex-col items-center justify-center p-4 bg-base-200 rounded-lg bg-gray-100"
                                     >
                                         {skill.icon}
                                         <p className="mt-2 text-lg text-gray-700">{skill.name}</p>
